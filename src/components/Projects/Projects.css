@@ -11,6 +11,7 @@
     width: 65%;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .pro-box{
     width: 400px;
