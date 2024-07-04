@@ -3,7 +3,6 @@
     height: 70px;
     background: #1e1e1e;
     display: flex;
-    position: fixed;
     justify-content: center;
     align-items: center;
     z-index: 100;
