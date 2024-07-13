@@ -34,3 +34,10 @@ ul li{
 ul li:hover{
     color: rgb(0, 174, 255);
 }
+
+
+@media screen and (max-width: 600px) {
+    .menu-con{
+        display: none;
+    }
+  }
