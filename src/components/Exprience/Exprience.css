@@ -13,6 +13,7 @@
     display:flex;
     justify-content: space-around;
     align-items: center;
+
 }
 .language img{
     width: 100px;
@@ -21,6 +22,7 @@
 
 @media screen and (max-width:600px){
     .language{
-        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 }
