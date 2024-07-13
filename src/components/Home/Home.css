@@ -1,15 +1,14 @@
 .container{
     width: 80%;
-    height: 90vh;
     display: flex;
     margin-top: 50px;
     justify-content: center;
     position: relative;
     align-items: center;
+    padding-bottom: 50px;
 }
 section{
     width: 100%;
-    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,4 +48,15 @@ section{
     border: 3px solid white;
     background: black;
     color: white;
+}
+
+@media screen and (max-width:600px) {
+    .paragraph p{
+        width: 350px;
+    }
+    .btns{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }
