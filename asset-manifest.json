@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f61c6bb5.css",
+    "main.css": "/portfolio/static/css/main.5799d81d.css",
     "main.js": "/portfolio/static/js/main.ee72ee7e.js",
     "static/media/educity.png": "/portfolio/static/media/educity.e4fed2dd243cc2757508.png",
     "static/media/instagram.png": "/portfolio/static/media/instagram.e719d8b29f452a16302d.png",
@@ -10,11 +10,11 @@
     "static/media/css-3.png": "/portfolio/static/media/css-3.463e319bad8e0edf1ef7.png",
     "static/media/js.png": "/portfolio/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/portfolio/index.html",
-    "main.f61c6bb5.css.map": "/portfolio/static/css/main.f61c6bb5.css.map",
+    "main.5799d81d.css.map": "/portfolio/static/css/main.5799d81d.css.map",
     "main.ee72ee7e.js.map": "/portfolio/static/js/main.ee72ee7e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f61c6bb5.css",
+    "static/css/main.5799d81d.css",
     "static/js/main.ee72ee7e.js"
   ]
 }
