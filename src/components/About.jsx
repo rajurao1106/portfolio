@@ -1,34 +1,67 @@
 import React from 'react';
-import { FaReact, FaCss3Alt, FaNodeJs, FaGitAlt, FaServer } from 'react-icons/fa'; // Importing icons
-import { SiRedux } from 'react-icons/si'; // Importing React-Redux icon
+import { FaReact, FaCss3Alt, FaNodeJs, FaGitAlt, FaServer } from 'react-icons/fa';
+import { SiRedux } from 'react-icons/si';
 
 export default function About() {
+  const downloadCV = () => {
+    // This would be the URL to your CV file
+    const link = document.createElement('a');
+    link.href = '/path-to-your-cv-file.pdf';
+    link.download = 'D_Raju_Rao_CV.pdf';
+    link.click();
+  };
+
   return (
-    <section id="about" className="bg-gray-100 py-10 mt-10 rounded-lg shadow-lg">
-      <div className="container mx-auto px-4">
-        <h3 className="text-4xl font-semibold text-center text-blue-600">About Me</h3>
-        <p className="mt-4 text-lg text-gray-700 text-center max-w-2xl mx-auto">
-          I am a passionate Frontend Developer with 3 years of experience mastering HTML, CSS and Javascript. 
-          Currently, I am focused on expanding my skills to become a Full Stack Software Engineer. I specialize 
-          in building and designing modern, responsive web applications, and creating seamless, modern user interfaces with a full-stack approach.
-        </p>
-        <h4 className="mt-6 font-semibold text-xl text-gray-800">Skills:</h4>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
-          <SkillCard skill="React.js" color="bg-blue-500" Icon={FaReact} />
-          <SkillCard skill="Tailwind CSS" color="bg-blue-600" Icon={FaCss3Alt} />
-          <SkillCard skill="Redux" color="bg-purple-600" Icon={SiRedux} />
-          <SkillCard skill="Node.js" color="bg-green-600" Icon={FaNodeJs} />
-          <SkillCard skill="Git" color="bg-orange-500" Icon={FaGitAlt} />
-          <SkillCard skill="Rest-API" color="bg-blue-700" Icon={FaServer} />
+    <section id="about" className="w-full flex flex-col justify-center items-center py-10 bg-gray-950 text-white h-screen">
+      <h1 className="text-5xl font-bold mb-10 max-lg:text-4xl max-md:text-3xl">About Me</h1>
+      
+      {/* Container for Personal Info and Stats */}
+      <div className="w-[90%] flex flex-col lg:flex-row justify-between items-center gap-10">
+        
+        {/* Personal Info */}
+        <div className="w-full max-lg:text-center flex flex-col gap-6">
+          <h2 className="text-2xl font-semibold mb-4">PERSONAL INFOS</h2>
+          <div className="flex max-md:flex-wrap text-left gap-6">
+            <div className="w-full lg:w-1/2">
+              <p>First Name : D Raju</p>
+              <p>Last Name : Rao</p>
+              <p>Age : 21</p>
+              <p>Nationality : Indian</p>
+              <p>Freelance : None</p>
+            </div>
+            <div className="w-full lg:w-1/2">
+              <p>Address : Raipur, Chhattisgarh</p>
+              <p>Phone : +91-7470578448</p>
+              <p>Email : rajurao1106@gmail.com</p>
+              <p>LinkedIn : <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">Profile Link</a></p>
+              <p>Languages : Hindi, Telugu, English</p>
+            </div>
+          </div>
+          <button onClick={downloadCV} className="bg-red-500 mt-4 w-52 p-3 rounded-full self-center lg:self-start">
+            Download CV
+          </button>
+        </div>
+
+        {/* Experience Stats */}
+        <div className="w-full lg:w-1/2 grid grid-cols-2 gap-5 max-lg:justify-center">
+          <div className="p-5 w-[10rem] h-[8rem] border-2 rounded-lg border-red-100 flex flex-col items-center">
+            <p className="text-5xl font-bold">12+</p>
+            <p>years of experience</p>
+          </div>
+          <div className="p-5 w-[10rem] h-[8rem] border-2 rounded-lg border-red-100 flex flex-col items-center">
+            <p className="text-5xl font-bold">100+</p>
+            <p>projects completed</p>
+          </div>
+          <div className="p-5 w-[10rem] h-[8rem] border-2 rounded-lg border-red-100 flex flex-col items-center">
+            <p className="text-5xl font-bold">5+</p>
+            <p>years in industry</p>
+          </div>
+          <div className="p-5 w-[10rem] h-[8rem] border-2 rounded-lg border-red-100 flex flex-col items-center">
+            <p className="text-5xl font-bold">50+</p>
+            <p>happy clients</p>
+          </div>
         </div>
       </div>
     </section>
   );
 }
-
-const SkillCard = ({ skill, color, Icon }) => (
-  <div className={`flex items-center p-4 ${color} text-white rounded-lg shadow-md`}>
-    <Icon className="text-3xl mr-3" />
-    <span className="text-lg font-medium">{skill}</span>
-  </div>
-);
