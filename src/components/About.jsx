@@ -12,24 +12,24 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="w-full flex flex-col justify-center items-center py-10 bg-gray-950 text-white h-full">
-      <h1 className="text-5xl font-bold mb-10 max-lg:text-4xl max-md:text-3xl">About Me</h1>
+    <section id="about" className="w-full flex flex-col justify-center items-center py-10 bg-gray-950 text-white h-screen max-md:h-[100%]">
+      <h1 className="w-full text-5xl font-extrabold mb-20 max-lg:text-4xl max-md:text-3xl relative flex justify-center items-center">ABOUT <p className='ml-2 text-yellow-400'> ME</p> <p className='absolute text-8xl opacity-10'>RESUME</p></h1>
       
-      {/* Container for Personal Info and Stats */}
       <div className="w-[90%] flex flex-col lg:flex-row justify-between items-center gap-10">
         
         {/* Personal Info */}
         <div className="w-full max-lg:text-center flex flex-col gap-6">
-          <h2 className="text-2xl font-semibold mb-4">PERSONAL INFOS</h2>
-          <div className="flex max-md:flex-wrap text-left gap-6">
-            <div className="w-full lg:w-1/2">
+          
+          <div className="flex max-md:flex-wrap text-left max-md:gap-5">
+            <div className=" gap-4 flex flex-col  ">
+            <h2 className="text-2xl font-bold ">PERSONAL INFO</h2>
               <p>First Name : D Raju</p>
               <p>Last Name : Rao</p>
               <p>Age : 21</p>
               <p>Nationality : Indian</p>
               <p>Freelance : None</p>
             </div>
-            <div className="w-full lg:w-1/2">
+            <div className=" justify-end gap-4 flex flex-col">
               <p>Address : Raipur, Chhattisgarh</p>
               <p>Phone : +91-7470578448</p>
               <p>Email : rajurao1106@gmail.com</p>
@@ -43,21 +43,21 @@ export default function About() {
         </div>
 
         {/* Experience Stats */}
-        <div className="w-full lg:w-1/2 grid grid-cols-2 gap-5 max-lg:justify-center">
-          <div className="p-5 w-[10rem] h-[8rem] border-2 rounded-lg border-red-100 flex flex-col items-center">
-            <p className="text-5xl font-bold">12+</p>
+        <div className="w-[100%] max-md:w-full flex flex-wrap gap-5 max-lg:justify-center">
+          <div className="p-5 w-[15rem] h-[8rem] border rounded-lg border-red-100 flex flex-col items-center">
+            <p className="text-5xl font-bold text-yellow-400">12+</p>
             <p>years of experience</p>
           </div>
-          <div className="p-5 w-[10rem] h-[8rem] border-2 rounded-lg border-red-100 flex flex-col items-center">
-            <p className="text-5xl font-bold">100+</p>
+          <div className="p-5 w-[15rem] h-[8rem] border rounded-lg border-red-100 flex flex-col items-center">
+            <p className="text-5xl font-bold text-yellow-400">100+</p>
             <p>projects completed</p>
           </div>
-          <div className="p-5 w-[10rem] h-[8rem] border-2 rounded-lg border-red-100 flex flex-col items-center">
-            <p className="text-5xl font-bold">5+</p>
+          <div className="p-5 w-[15rem] h-[8rem] border rounded-lg border-red-100 flex flex-col items-center">
+            <p className="text-5xl font-bold text-yellow-400">5+</p>
             <p>years in industry</p>
           </div>
-          <div className="p-5 w-[10rem] h-[8rem] border-2 rounded-lg border-red-100 flex flex-col items-center">
-            <p className="text-5xl font-bold">50+</p>
+          <div className="p-5 w-[15rem] h-[8rem] border rounded-lg border-red-100 flex flex-col items-center">
+            <p className="text-5xl font-bold text-yellow-400">50+</p>
             <p>happy clients</p>
           </div>
         </div>

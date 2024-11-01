@@ -16,7 +16,7 @@ export default function Asidebar() {
   
 
   return (
-    <div className='h-full'>
+    <div className='h-[100%] fixed right-0'>
         {/* Menu Button for Mobile */}
       <button 
         className="fixed top-4 right-4 z-20 bg-gray-700 text-white p-2 rounded-md md:hidden" 
@@ -70,7 +70,7 @@ export default function Asidebar() {
 {/* Overlay for Mobile when Menu is Open */}
 {isMenuOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 -z-0"
+          className="max-md:fixed inset-0 bg-black bg-opacity-50 -z-0"
           onClick={toggleMenu}
         ></div>
       )}

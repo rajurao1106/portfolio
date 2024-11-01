@@ -1,5 +1,7 @@
 import React from 'react';
 import profileImage from '../assets/raju.jpg';
+import right_arrow from '../assets/right-arrow.png'
+import { Link } from 'react-router-dom';
 
 export default function Hero() {
   return (
@@ -9,21 +11,27 @@ export default function Hero() {
         {/* Profile Image */}
         <img
           src={profileImage}
-          className="w-[20rem] max-lg:w-[15rem] max-md:w-[12rem] rounded-3xl mb-8 max-lg:mb-8 lg:mb-0"
+          className="w-[25rem] max-lg:w-[15rem] max-md:w-[12rem] rounded-3xl mb-8 max-lg:mb-8 lg:mb-0"
           alt="Profile"
         />
         
         {/* Text Content */}
-        <div className="flex flex-col justify-center items-start w-full lg:w-[50%] text-white gap-6 max-md:gap-4 text-center lg:text-left">
-          <h1 className="text-4xl max-lg:text-3xl max-md:text-2xl font-bold">
-            I'm Steve Milner, Web Designer
+        <div className="flex flex-col justify-center items-start max-md:items-center w-full lg:w-[50%] text-white gap-6 max-md:gap-4 text-center lg:text-left">
+          <h1 className="text-5xl max-lg:text-3xl max-md:text-2xl font-bold">
+           <p className='text-yellow-500'> I'M STEVE MILNER,</p> WEB DESIGNER
           </h1>
-          <p className="text-lg max-lg:text-base max-md:text-sm">
+          <p className=" max-lg:text-base max-md:text-sm">
             I'm a Tunisian-based web designer & front-end developer focused on crafting clean & user-friendly experiences. I am passionate about building excellent software that improves the lives of those around me.
           </p>
-          <button className="rounded-full p-3 font-semibold border-yellow-300 border-2 hover:bg-yellow-300 hover:text-gray-950 transition duration-300">
-            More About Me
-          </button>
+          <Link to={'/portfolio/about'} className="rounded-full gap-10 justify-center items-center flex p-3 font-semibold overflow-hidden border-yellow-500 border-2 group relative">
+            <p className='mr-10 z-10'>More About Me </p>
+            <div className="absolute right-0 w-10 h-10 group-hover:w-60 group-hover:h-40 rounded-full bg-yellow-500 transition-all duration-300">
+              
+            </div>
+            <div className="w-12 h-12 bg-yellow-500 z-10 absolute right-0 rounded-full flex items-center justify-center">
+              <img src={right_arrow} alt="" className='w-5' />
+            </div>
+          </Link>
         </div>
         
       </div>

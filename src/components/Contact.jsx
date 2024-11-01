@@ -3,16 +3,23 @@ import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
 
 export default function Contact() {
   return (
-    <section id="contact" className="w-full max-md:py-20 flex flex-col justify-center items-center h-full bg-gray-950 text-white">
+    <section id="contact" className="w-full max-md:py-20 flex flex-col justify-center items-center h-screen max-md:h-[100%] bg-gray-950 text-white">
       <h1 className="text-5xl font-bold mb-8">Get In Touch</h1>
-      <div className="w-[90%] flex flex-col lg:flex-row items-center justify-center gap-10">
+      <div className="w-[75%] flex flex-col lg:flex-row items-center justify-center gap-10">
         
         {/* Left Section */}
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-semibold">DON'T BE SHY!</h2>
-          <p className="max-w-md text-center lg:text-left">
+          <p className="max-w-md text-left">
             Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
+          <div className="flex items-center gap-4 mt-4">
+            <FaFacebook className="text-blue-500 text-2xl" />
+            <div>
+              <p className="text-lg font-semibold">MAIL ME</p>
+              <p className="text-sm">rajurao1106@gmail.com</p>
+            </div>
+          </div>
           <div className="flex items-center gap-4 mt-4">
             <FaFacebook className="text-blue-500 text-2xl" />
             <div>
