@@ -6,14 +6,14 @@ export default function About() {
   const downloadCV = () => {
     // This would be the URL to your CV file
     const link = document.createElement('a');
-    link.href = '/path-to-your-cv-file.pdf';
+    link.href = 'https://drive.google.com/file/d/1CC70aft7txrnG4VzzfG6YMGygei4dxAh/view';
     link.download = 'D_Raju_Rao_CV.pdf';
     link.click();
   };
 
   return (
     <section id="about" className="w-full flex flex-col justify-center items-center py-10 bg-gray-950 text-white h-screen max-md:h-[100%]">
-      <h1 className="w-full text-5xl font-extrabold mb-20 max-lg:text-4xl max-md:text-3xl relative flex justify-center items-center">ABOUT <p className='ml-2 text-yellow-400'> ME</p> <p className='absolute text-8xl opacity-10'>RESUME</p></h1>
+      <h1 className="w-full text-5xl font-extrabold mb-20 max-lg:text-4xl max-md:text-3xl relative flex justify-center items-center">ABOUT <p className='ml-2 text-yellow-400'> ME</p> <p className='absolute text-8xl max-md:text-6xl opacity-10'>RESUME</p></h1>
       
       <div className="w-[90%] flex flex-col lg:flex-row justify-between items-center gap-10">
         
@@ -33,7 +33,7 @@ export default function About() {
               <p>Address : Raipur, Chhattisgarh</p>
               <p>Phone : +91-7470578448</p>
               <p>Email : rajurao1106@gmail.com</p>
-              <p>LinkedIn : <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">Profile Link</a></p>
+              <p>LinkedIn : <a href="https://www.linkedin.com/in/raju-rao/" target="_blank" rel="noopener noreferrer">linkedin.com/raju-rao/</a></p>
               <p>Languages : Hindi, Telugu, English</p>
             </div>
           </div>

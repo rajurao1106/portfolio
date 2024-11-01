@@ -18,17 +18,15 @@ export default function Hero() {
         {/* Text Content */}
         <div className="flex flex-col justify-center items-start max-md:items-center w-full lg:w-[50%] text-white gap-6 max-md:gap-4 text-center lg:text-left">
           <h1 className="text-5xl max-lg:text-3xl max-md:text-2xl font-bold">
-           <p className='text-yellow-500'> I'M STEVE MILNER,</p> WEB DESIGNER
+           <p className='text-yellow-500'> I'M D. RAJU RAO,</p> WEB DEVELOPER
           </h1>
           <p className=" max-lg:text-base max-md:text-sm">
             I'm a Tunisian-based web designer & front-end developer focused on crafting clean & user-friendly experiences. I am passionate about building excellent software that improves the lives of those around me.
           </p>
-          <Link to={'/portfolio/about'} className="rounded-full gap-10 justify-center items-center flex p-3 font-semibold overflow-hidden border-yellow-500 border-2 group relative">
+          <Link to={'/portfolio/about'} className="rounded-full gap-10 justify-center items-center flex p-3 font-semibold overflow-hidden border-yellow-500 border group relative">
             <p className='mr-10 z-10'>More About Me </p>
-            <div className="absolute right-0 w-10 h-10 group-hover:w-60 group-hover:h-40 rounded-full bg-yellow-500 transition-all duration-300">
-              
-            </div>
-            <div className="w-12 h-12 bg-yellow-500 z-10 absolute right-0 rounded-full flex items-center justify-center">
+            <div className="absolute right-0 w-10 h-10 group-hover:w-60 group-hover:h-40 rounded-full bg-yellow-500 transition-all duration-300"></div>
+            <div className="w-12 h-12 bg-yellow-500 absolute right-0 rounded-full flex items-center justify-center">
               <img src={right_arrow} alt="" className='w-5' />
             </div>
           </Link>

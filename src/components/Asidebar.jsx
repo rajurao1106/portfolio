@@ -5,6 +5,8 @@ import about from '../assets/Asidebar/user.png'
 import portfolio from '../assets/Asidebar/portfolio.png'
 import contact from '../assets/Asidebar/open-mail.png'
 import blog from '../assets/Asidebar/blog.png'
+import menu from '../assets/menu.png'
+import close from '../assets/close.png'
 
 export default function Asidebar() {
 
@@ -16,13 +18,13 @@ export default function Asidebar() {
   
 
   return (
-    <div className='h-[100%] fixed right-0'>
+    <div className='h-[100%] fixed right-0 z-10'>
         {/* Menu Button for Mobile */}
       <button 
         className="fixed top-4 right-4 z-20 bg-gray-700 text-white p-2 rounded-md md:hidden" 
         onClick={toggleMenu}
       >
-        {isMenuOpen ? 'Close Menu' : 'Menu'}
+        {isMenuOpen ? <img src={close} className='w-5' alt="" /> : <img src={menu} className='w-5'/>}
       </button>
 
       <aside className={`fixed z-10 top-0 right-0 w-40 max-md:w-60 h-screen bg-gray-950 text-white flex flex-col justify-center items-center transition-transform duration-300 md:static ${
