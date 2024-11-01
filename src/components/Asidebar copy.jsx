@@ -14,7 +14,7 @@ export default function Asidebar() {
   };
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-full">
       {/* Menu Button for Mobile */}
       <button 
         className="fixed top-4 left-4 z-20 bg-gray-700 text-white p-2 rounded-md md:hidden" 

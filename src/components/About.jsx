@@ -12,7 +12,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="w-full flex flex-col justify-center items-center py-10 bg-gray-950 text-white h-screen">
+    <section id="about" className="w-full flex flex-col justify-center items-center py-10 bg-gray-950 text-white h-full">
       <h1 className="text-5xl font-bold mb-10 max-lg:text-4xl max-md:text-3xl">About Me</h1>
       
       {/* Container for Personal Info and Stats */}
