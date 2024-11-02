@@ -18,7 +18,7 @@ export default function Asidebar() {
   
 
   return (
-    <div className='h-[100%] fixed right-0 z-10'>
+    <div className='h-[100%] fixed right-0 z-10 '>
         {/* Menu Button for Mobile */}
       <button 
         className="fixed top-4 right-4 z-20 bg-gray-700 text-white p-2 rounded-md md:hidden" 
