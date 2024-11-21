@@ -1,35 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
-import axios from 'axios';
 import call from '../assets/phone-call.png';
 import open_mail from '../assets/Asidebar/open-mail.png';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const [responseMessage, setResponseMessage] = useState('');
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:5000/send-mail', formData);
-      setResponseMessage(response.data.message);
-      setFormData({ name: '', email: '', subject: '', message: '' });
-    } catch (error) {
-      setResponseMessage('Failed to send email. Please try again.');
-      console.error(error);
-    }
-  };
-
   return (
     <section id="contact" className="w-full max-md:py-20 flex flex-col justify-center items-center h-screen max-md:h-[100%] bg-gray-950 text-white">
       <h1 className="w-full text-5xl font-extrabold mb-10 max-lg:text-4xl max-md:text-3xl relative flex justify-center items-center">
@@ -76,14 +50,20 @@ export default function Contact() {
 
         {/* Right Section */}
         <div className="flex flex-col w-full lg:w-auto max-md:items-center">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-5 w-full lg:w-auto">
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            className="flex flex-col gap-5 w-full lg:w-auto"
+          >
+            {/* Hidden Input for Web3Form Access Key */}
+            <input type="hidden" name="5f1e465a-6898-4169-b57c-92103a1e3ade" value="5f1e465a-6898-4169-b57c-92103a1e3ade" />
+            
+            {/* Inputs */}
             <div className="flex flex-col lg:flex-row gap-5">
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                value={formData.name}
-                onChange={handleChange}
                 required
                 className="p-2 rounded bg-gray-800 text-white outline-none border border-gray-600 w-full lg:w-52"
               />
@@ -91,8 +71,6 @@ export default function Contact() {
                 type="email"
                 name="email"
                 placeholder="Your Email"
-                value={formData.email}
-                onChange={handleChange}
                 required
                 className="p-2 rounded bg-gray-800 text-white outline-none border border-gray-600 w-full lg:w-52"
               />
@@ -100,20 +78,19 @@ export default function Contact() {
                 type="text"
                 name="subject"
                 placeholder="Your Subject"
-                value={formData.subject}
-                onChange={handleChange}
                 required
                 className="p-2 rounded bg-gray-800 text-white outline-none border border-gray-600 w-full lg:w-52"
               />
             </div>
+
             <textarea
               name="message"
               placeholder="Your Message"
-              value={formData.message}
-              onChange={handleChange}
               required
               className="p-2 rounded bg-gray-800 text-white outline-none border border-gray-600 w-full h-32"
             ></textarea>
+            
+            {/* Submit Button */}
             <button
               type="submit"
               className="bg-red-500 w-full lg:w-60 p-2 rounded-full hover:bg-red-600 transition duration-300"
@@ -121,7 +98,6 @@ export default function Contact() {
               Send Message
             </button>
           </form>
-          {responseMessage && <p className="mt-4 text-center">{responseMessage}</p>}
         </div>
       </div>
     </section>
