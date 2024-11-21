@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function Hero() {
   return (
     <section id="hero" className="w-full flex flex-col justify-center items-center h-screen bg-gray-950">
-      <div className="w-[90%] flex flex-col max-lg:flex-col max-lg:items-center lg:flex-row lg:justify-between">
+      <div className="w-[90%] flex flex-col max-lg:flex-col max-lg:items-center lg:flex-row justify-around">
         
         {/* Profile Image */}
         <img
@@ -20,8 +20,8 @@ export default function Hero() {
           <h1 className="text-5xl max-lg:text-3xl max-md:text-2xl font-bold">
            <p className='text-yellow-500'> I'M D. RAJU RAO,</p> WEB DEVELOPER
           </h1>
-          <p className=" max-lg:text-base max-md:text-sm">
-            I'm a Tunisian-based web designer & front-end developer focused on crafting clean & user-friendly experiences. I am passionate about building excellent software that improves the lives of those around me.
+          <p className=" max-lg:text-base max-md:text-sm pr-5">
+          I am a passionate and results-driven Web Developer with 4 years of experience specializing in creating dynamic, responsive, and user-friendly websites. My expertise lies in crafting seamless digital experiences using modern tools and technologies such as React.js, Vite, Node.js, Express, and MongoDB.
           </p>
           <Link to={'/portfolio/about'} className="rounded-full gap-10 justify-center items-center flex p-3 font-semibold overflow-hidden border-yellow-500 border group relative">
             <p className='mr-10 z-10'>More About Me </p>
