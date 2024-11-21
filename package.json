@@ -5,7 +5,6 @@
   "type": "module",
   "scripts": {
     "dev": "concurrently \"nodemon server.cjs\" \"vite --host\"",
-    "vite": "vite --host",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
