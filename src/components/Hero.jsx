@@ -27,7 +27,7 @@ export default function Hero() {
             <p className='mr-10 z-10'>More About Me </p>
             <div className="absolute right-0 w-10 h-10 group-hover:w-60 group-hover:h-40 rounded-full bg-yellow-500 transition-all duration-300"></div>
             <div className="w-12 h-12 bg-yellow-500 absolute right-0 rounded-full flex items-center justify-center">
-              <img src={right_arrow} alt="" className='w-5' />
+              <img src={right_arrow} alt="" className='w-5'/>
             </div>
           </Link>
         </div>

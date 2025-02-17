@@ -16,11 +16,11 @@ function App() {
         <div className="flex">
           <main className="flex-1 ">
             <Routes>
-              <Route path="/portfolio/" element={<Hero />} />
-              <Route path="/portfolio/about" element={<About />} />
-              <Route path="/portfolio/portfolio" element={<Portfolio />} />
-              <Route path="/portfolio/blog" element={<Blog />} />
-              <Route path="/portfolio/contact" element={<Contact />} />
+              <Route path="/" element={<Hero />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
+              <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
             </Routes>
           </main>
           <Asidebar />
