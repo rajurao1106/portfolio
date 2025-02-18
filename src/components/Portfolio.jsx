@@ -29,7 +29,7 @@ export default function Portfolio() {
   const projects = [
     {
       image: define,
-      link: "https://rajurao1106.github.io/educity-website/",
+      link: "https://define-jss6.onrender.com",
       name: "Educity Website",
     },
     {
@@ -37,6 +37,12 @@ export default function Portfolio() {
       link: "https://rajurao1106.github.io/food-website/",
       name: "Food Delivery Website",
     },
+    {
+      image: food_delivery,
+      link: "https://quickscan.onrender.com",
+      name: "Quickscan Website",
+    },
+    
   ];
 
   return (
