@@ -19,7 +19,7 @@ export default function Hero() {
         />
 
         {/* Text Content */}
-        <div className="flex flex-col justify-center items-start max-md:items-center w-full lg:w-[50%] text-white gap-6 max-md:gap-4 text-center lg:text-left">
+        <div className="flex flex-col justify-center items-start max-lg:items-center w-full lg:w-[50%] text-white gap-6 max-md:gap-4 text-center lg:text-left">
           <h1 className="text-5xl max-lg:text-3xl max-md:text-2xl font-bold">
             <p className="text-yellow-500"> I'M D. RAJU RAO,</p> WEB DEVELOPER
           </h1>

@@ -30,7 +30,7 @@ export default function Asidebar() {
       </button>
 
       <aside
-        className={`fixed z-10 top-0 right-0 w-40 max-md:w-60 h-screen bg-gray-950 text-white flex flex-col justify-center items-center transition-transform duration-300 md:static ${
+        className={`fixed z-10 top-0 right-0 w-40 max-md:w-60 h-screen text-white flex flex-col justify-center items-center transition-transform duration-300 md:static ${
           isMenuOpen ? "-translate-x-0" : "max-md:translate-x-full"
         }`}
       >
