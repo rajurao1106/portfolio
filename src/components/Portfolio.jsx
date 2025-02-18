@@ -2,7 +2,6 @@ import React from "react";
 import educity from "../assets/educity.png";
 import visit from "../assets/external-link.png";
 import food_delivery from "../assets/food_delivery.png";
-import kundli from "../assets/kundli.png";
 import spadvertising from "../assets/spadvertising.png";
 import varunwadhwa from "../assets/varunwadhwa.png";
 import define from "../assets/define.png";
