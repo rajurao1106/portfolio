@@ -6,6 +6,7 @@ import kundli from "../assets/kundli.png";
 import spadvertising from "../assets/spadvertising.png";
 import varunwadhwa from "../assets/varunwadhwa.png";
 import define from "../assets/define.png";
+import quickscan from "../assets/quickscan.png"
 
 export default function Portfolio() {
   const websites = [
@@ -38,7 +39,7 @@ export default function Portfolio() {
       name: "Food Delivery Website",
     },
     {
-      image: food_delivery,
+      image: quickscan,
       link: "https://quickscan.onrender.com",
       name: "Quickscan Website",
     },
