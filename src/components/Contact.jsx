@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from 'react-icons/fa';
-import call from '../assets/phone-call.png';
-import open_mail from '../assets/Asidebar/open-mail.png';
+import React, { useState } from "react";
+import { FaLinkedin, FaGithub, FaInstagram, FaFacebook } from "react-icons/fa";
+import call from "../assets/phone-call.png";
+import open_mail from "../assets/Asidebar/open-mail.png";
 
 export default function Contact() {
   const [result, setResult] = useState("");
@@ -40,10 +40,13 @@ export default function Contact() {
         <div className="flex flex-col gap-2">
           <h2 className="text-2xl font-semibold">DON'T BE SHY!</h2>
           <p className="max-w-md text-left">
-            Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+            Feel free to get in touch with me. I am always open to discussing
+            new projects, creative ideas, or opportunities to be part of your
+            vision.
           </p>
           <div className="flex items-center gap-4 mt-4">
             <img
+              loading="lazy"
               src={open_mail}
               className="text-blue-500 text-2xl w-8"
               alt="Mail Icon"
@@ -55,6 +58,7 @@ export default function Contact() {
           </div>
           <div className="flex items-center gap-4 mt-4">
             <img
+              loading="lazy"
               src={call}
               className="text-blue-500 text-2xl w-8"
               alt="Call Icon"
@@ -65,13 +69,19 @@ export default function Contact() {
             </div>
           </div>
           <div className="flex gap-5 text-3xl mt-4">
-            <a href="https://www.linkedin.com/in/raju-rao/" aria-label="LinkedIn">
+            <a
+              href="https://www.linkedin.com/in/raju-rao/"
+              aria-label="LinkedIn"
+            >
               <FaLinkedin className="hover:text-blue-600" />
             </a>
             <a href="https://github.com/rajurao1106" aria-label="GitHub">
               <FaGithub className="hover:text-gray-400" />
             </a>
-            <a href="https://www.instagram.com/rajurao1107/" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/rajurao1107/"
+              aria-label="Instagram"
+            >
               <FaInstagram className="hover:text-pink-500" />
             </a>
             <a
@@ -126,7 +136,9 @@ export default function Contact() {
               Send Message
             </button>
             {result && (
-              <p className="mt-4 text-center text-sm text-green-500">{result}</p>
+              <p className="mt-4 text-center text-sm text-green-500">
+                {result}
+              </p>
             )}
           </form>
         </div>
