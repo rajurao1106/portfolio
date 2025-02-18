@@ -31,7 +31,7 @@ export default function Hero() {
             React.js, Vite, Node.js, Express, and MongoDB.
           </p>
           <Link
-            to={"/portfolio/about"}
+            to={"/about"}
             className="rounded-full gap-10 justify-center items-center flex p-3 font-semibold overflow-hidden border-yellow-500 border group relative"
           >
             <p className="mr-10 z-10">More About Me </p>
