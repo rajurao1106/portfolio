@@ -6,6 +6,7 @@ import spadvertising from "../assets/spadvertising.png";
 import varunwadhwa from "../assets/varunwadhwa.png";
 import define from "../assets/define.png";
 import quickscan from "../assets/quickscan.png"
+import buddy from "../assets/buddy.png"
 
 export default function Portfolio() {
   const websites = [
@@ -41,6 +42,11 @@ export default function Portfolio() {
       image: quickscan,
       link: "https://quickscan.onrender.com",
       name: "Quickscan Website",
+    },
+    {
+      image: buddy,
+      link: "https://buddy-5ext.onrender.com/",
+      name: "Buddy Website",
     },
     
   ];
