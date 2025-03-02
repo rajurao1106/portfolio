@@ -5,16 +5,16 @@ import food_delivery from "../assets/food_delivery.png";
 import spadvertising from "../assets/spadvertising.png";
 import varunwadhwa from "../assets/varunwadhwa.png";
 import define from "../assets/define.png";
-import quickscan from "../assets/quickscan.png"
-import buddy from "../assets/buddy.png"
-import pracharkarsolutions from "../assets/pracharkarsolutions.png"
+import quickscan from "../assets/quickscan.png";
+import buddy from "../assets/buddy.png";
+import pracharkarsolutions from "../assets/pracharkarsolutions.png";
 
 export default function Portfolio() {
   const websites = [
     {
       image: pracharkarsolutions,
       link: "https://www.pracharkarsolutions.com",
-      name: "Educity Website",
+      name: "Pracharkar Solutions",
     },
     {
       image: spadvertising,
@@ -35,6 +35,11 @@ export default function Portfolio() {
       name: "Educity Website",
     },
     {
+      image: buddy,
+      link: "https://buddy-5ext.onrender.com/",
+      name: "Buddy Website",
+    },
+    {
       image: food_delivery,
       link: "https://rajurao1106.github.io/food-website/",
       name: "Food Delivery Website",
@@ -45,11 +50,10 @@ export default function Portfolio() {
       name: "Quickscan Website",
     },
     {
-      image: buddy,
-      link: "https://buddy-5ext.onrender.com/",
-      name: "Buddy Website",
+      image: educity,
+      link: "https://rajurao1106.github.io/educity-website/",
+      name: "Educity Website",
     },
-    
   ];
 
   return (
