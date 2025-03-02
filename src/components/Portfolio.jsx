@@ -13,7 +13,7 @@ export default function Portfolio() {
   const websites = [
     {
       image: pracharkarsolutions,
-      link: "https://rajurao1106.github.io/educity-website/",
+      link: "https://www.pracharkarsolutions.com",
       name: "Educity Website",
     },
     {
