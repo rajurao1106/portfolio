@@ -7,11 +7,12 @@ import varunwadhwa from "../assets/varunwadhwa.png";
 import define from "../assets/define.png";
 import quickscan from "../assets/quickscan.png"
 import buddy from "../assets/buddy.png"
+import pracharkarsolutions from "../assets/pracharkarsolutions.png"
 
 export default function Portfolio() {
   const websites = [
     {
-      image: educity,
+      image: pracharkarsolutions,
       link: "https://rajurao1106.github.io/educity-website/",
       name: "Educity Website",
     },
