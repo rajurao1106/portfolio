@@ -8,6 +8,7 @@ import define from "../assets/define.png";
 import quickscan from "../assets/quickscan.png";
 import buddy from "../assets/buddy.png";
 import pracharkarsolutions from "../assets/pracharkarsolutions.png";
+import english_teacher from "../assets/english-teacher.png";
 
 export default function Portfolio() {
   const websites = [
@@ -29,6 +30,11 @@ export default function Portfolio() {
   ];
 
   const projects = [
+    {
+      image: english_teacher,
+      link: "https://ai-projects-two.vercel.app/MakeAFriends",
+      name: "English Teacher",
+    },
     {
       image: define,
       link: "https://define-jss6.onrender.com",
